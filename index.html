@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Imágenes</title>
+
+  <!-- Tipografía -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <!-- ===================== BARRA DE NAVEGACIÓN ===================== -->
+  <header class="navbar" id="inicio">
+    <a class="marca" href="#inicio">
+      <span class="logo">G</span>
+      Galería de Imágenes
+    </a>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+
+  <!-- ===================== CONTENIDO PRINCIPAL ===================== -->
+  <main class="contenedor" id="galeria">
+
+    <!--
+      Estos botones invisibles controlan qué sección se ve.
+      El que tiene "checked" es la sección que aparece al abrir la página.
+    -->
+    <input class="selector" type="radio" name="seccion" id="tab-carrera" checked>
+    <input class="selector" type="radio" name="seccion" id="tab-suenos">
+    <input class="selector" type="radio" name="seccion" id="tab-peliculas">
+    <input class="selector" type="radio" name="seccion" id="tab-cantantes">
+    <input class="selector" type="radio" name="seccion" id="tab-deportes">
+
+
+    <!-- ===================== MENÚ LATERAL ===================== -->
+    <aside class="menu">
+      <h2>Categorías</h2>
+      <label for="tab-carrera"><span class="icono">🎓</span> Carrera</label>
+      <label for="tab-suenos"><span class="icono">💭</span> Sueños</label>
+      <label for="tab-peliculas"><span class="icono">🎬</span> Películas</label>
+      <label for="tab-cantantes"><span class="icono">🎤</span> Cantantes</label>
+      <label for="tab-deportes"><span class="icono">⚽</span> Deportes</label>
+    </aside>
+
+
+    <!-- ===================== SECCIÓN 1: CARRERA ===================== -->
+    <section class="panel" id="panel-carrera">
+      <header class="panel-cabecera">
+        <span class="etiqueta">01 · Carrera</span>
+        <h1>Mi carrera</h1>
+        <p>Valiendo madres en la carrera pero proximaente por las buenas o por las malas FUTURO INGENIERO EN SISTEMAS.</p>
+      </header>
+
+      <div class="carrusel">
+                <input class="control" type="radio" name="foto-carrera" id="carrera-1" aria-label="Ver foto 1">
+        <input class="control" type="radio" name="foto-carrera" id="carrera-2" aria-label="Ver foto 2">
+        <input class="control" type="radio" name="foto-carrera" id="carrera-3" aria-label="Ver foto 3">
+        <input class="control" type="radio" name="foto-carrera" id="carrera-4" aria-label="Ver foto 4">
+        <input class="control" type="radio" name="foto-carrera" id="carrera-5" aria-label="Ver foto 5">
+        <span class="pausa">❚❚ Pausado</span>
+        <div class="pista">
+
+          <figure class="slide">
+            <img src="compu1.jpeg" alt="Foto 1 de mi carrera">
+            <figcaption>
+              <span class="numero">1 / 5</span>
+              <h3>Futuro inge en sistemas</h3>
+              <p>Aprendiendo a programas para hacer estas vainas.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="compu2.jpeg" alt="Foto 2 de mi carrera">
+            <figcaption>
+              <span class="numero">2 / 5</span>
+              <h3>Futuro Hacker</h3>
+              <p>Aprendiendo a como tirarle un Malware a la que me rechace.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="compu3.jpeg" alt="Foto 3 de mi carrera">
+            <figcaption>
+              <span class="numero">3 / 5</span>
+              <h3>La IA</h3>
+              <p>Chat gpt y yo crearemos el proximo microsoft.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="compu4.jpeg" alt="Foto 4 de mi carrera">
+            <figcaption>
+              <span class="numero">4 / 5</span>
+              <h3>Redes</h3>
+              <p>Proximamente instalando 120 metros de cable.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="compu5.jpeg" alt="Foto 5 de mi carrera">
+            <figcaption>
+              <span class="numero">5 / 5</span>
+              <h3>Lenguajes de programacion</h3>
+              <p>Dios me guarde y me ayude para aprenderme esa mamada.</p>
+            </figcaption>
+          </figure>
+
+        </div>
+                <div class="puntos">
+          <label for="carrera-1"></label>
+          <label for="carrera-2"></label>
+          <label for="carrera-3"></label>
+          <label for="carrera-4"></label>
+          <label for="carrera-5"></label>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================== SECCIÓN 2: SUEÑOS ===================== -->
+    <section class="panel" id="panel-suenos">
+      <header class="panel-cabecera">
+        <span class="etiqueta">02 · Sueños</span>
+        <h1>Mis sueños</h1>
+        <p>No es mucho pedir diosito ayudame a que se cumplanx.</p>
+      </header>
+
+      <div class="carrusel">
+                <div class="puntos">
+          <label for="suenos-1"></label>
+          <label for="suenos-2"></label>
+          <label for="suenos-3"></label>
+          <label for="suenos-4"></label>
+          <label for="suenos-5"></label>
+        </div>
+        <span class="pausa">❚❚ Pausado</span>
+        <div class="pista">
+
+          <figure class="slide">
+            <img src="sue;o1.jpeg" alt="Foto 1 de mis sueños">
+            <figcaption>
+              <span class="numero">1 / 5</span>
+              <h3>Graduarme</h3>
+              <p>Me graduo por las buenas o por las malas y dinero no tengo.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="sue;o2.jpeg" alt="Foto 2 de mis sueños">
+            <figcaption>
+              <span class="numero">2 / 5</span>
+              <h3>Casarme</h3>
+              <p>Solo pido que me quieran.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="sue;o3.jpeg" alt="Foto 3 de mis sueños">
+            <figcaption>
+              <span class="numero">3 / 5</span>
+              <h3>Mony</h3>
+              <p>Pronto hermano pronto va a caer el biyuyo.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="sue;o4.jpeg" alt="Foto 4 de mis sueños">
+            <figcaption>
+              <span class="numero">4 / 5</span>
+              <h3>La gotica</h3>
+              <p>Algun dia le va a caer la gotica a mi mejor amigo y si es avaricia a mi tambien.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="sue;o5.jpeg" alt="Foto 5 de mis sueños">
+            <figcaption>
+              <span class="numero">5 / 5</span>
+              <h3>Chambear</h3>
+              <p>Necesitamos pisto vamos a chambear de lo que caiga, avisen si ven chamba disponible.</p>
+            </figcaption>
+          </figure>
+
+        </div>
+                <input class="control" type="radio" name="foto-suenos" id="suenos-1" aria-label="Ver foto 1">
+        <input class="control" type="radio" name="foto-suenos" id="suenos-2" aria-label="Ver foto 2">
+        <input class="control" type="radio" name="foto-suenos" id="suenos-3" aria-label="Ver foto 3">
+        <input class="control" type="radio" name="foto-suenos" id="suenos-4" aria-label="Ver foto 4">
+        <input class="control" type="radio" name="foto-suenos" id="suenos-5" aria-label="Ver foto 5">
+      </div>
+    </section>
+
+
+    <!-- ===================== SECCIÓN 3: PELÍCULAS ===================== -->
+    <section class="panel" id="panel-peliculas">
+      <header class="panel-cabecera">
+        <span class="etiqueta">03 · Películas</span>
+        <h1>Pelis</h1>
+        <p>Son buenisimas pero son las primeras que se me vinieron a la mente.</p>
+      </header>
+
+      <div class="carrusel">
+                <div class="puntos">
+          <label for="peliculas-1"></label>
+          <label for="peliculas-2"></label>
+          <label for="peliculas-3"></label>
+          <label for="peliculas-4"></label>
+          <label for="peliculas-5"></label>
+        </div>
+        <span class="pausa">❚❚ Pausado</span>
+        <div class="pista">
+
+          <figure class="slide">
+            <img src="pelis1.jpeg" alt="Foto de la película 1">
+            <figcaption>
+              <span class="numero">1 / 5</span>
+              <h3>Ready player one</h3>
+              <p>Con claude proximamente creo un juego como esa peli.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="peli2.jpeg" alt="Foto de la película 2">
+            <figcaption>
+              <span class="numero">2 / 5</span>
+              <h3>Residen evil: noche cero</h3>
+              <p>Que maldita noche.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="peli3.jpeg" alt="Foto de la película 3">
+            <figcaption>
+              <span class="numero">3 / 5</span>
+              <h3>The avengers Endgame</h3>
+              <p>Te bote remix resumida en una peli.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="peli4.jpeg" alt="Foto de la película 4">
+            <figcaption>
+              <span class="numero">4 / 5</span>
+              <h3>The Batman</h3>
+              <p>Cine cuando DC se pone serio.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="peli5.jpeg" alt="Foto de la película 5">
+            <figcaption>
+              <span class="numero">5 / 5</span>
+              <h3>Pixel</h3>
+              <p>Pues nada que decir sobre esta obra de arte.</p>
+            </figcaption>
+          </figure>
+
+        </div>
+                <input class="control" type="radio" name="foto-peliculas" id="peliculas-1" aria-label="Ver foto 1">
+        <input class="control" type="radio" name="foto-peliculas" id="peliculas-2" aria-label="Ver foto 2">
+        <input class="control" type="radio" name="foto-peliculas" id="peliculas-3" aria-label="Ver foto 3">
+        <input class="control" type="radio" name="foto-peliculas" id="peliculas-4" aria-label="Ver foto 4">
+        <input class="control" type="radio" name="foto-peliculas" id="peliculas-5" aria-label="Ver foto 5">
+      </div>
+    </section>
+
+
+    <!-- ===================== SECCIÓN 4: CANTANTES ===================== -->
+    <section class="panel" id="panel-cantantes">
+      <header class="panel-cabecera">
+        <span class="etiqueta">04 · Cantantes</span>
+        <h1>Los top globales</h1>
+        <p>Todo lo que tocan lo hacen la mejor cancion de la historia.</p>
+      </header>
+
+      <div class="carrusel">
+                <div class="puntos">
+          <label for="cantantes-1"></label>
+          <label for="cantantes-2"></label>
+          <label for="cantantes-3"></label>
+          <label for="cantantes-4"></label>
+          <label for="cantantes-5"></label>
+        </div>
+        <span class="pausa">❚❚ Pausado</span>
+        <div class="pista">
+
+          <figure class="slide">
+            <img src="cantantes1.jpeg" alt="Foto del cantante 1">
+            <figcaption>
+              <span class="numero">1 / 5</span>
+              <h3>Kevin Kaarl</h3>
+              <p>El que me acompa;a en las noches oscuras.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="cantantes2.jpeg" alt="Foto del cantante 2">
+            <figcaption>
+              <span class="numero">2 / 5</span>
+              <h3>Bad Bunny</h3>
+              <p>El mas grande.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="cantantes3.jpeg" alt="Foto del cantante 3">
+            <figcaption>
+              <span class="numero">3 / 5</span>
+              <h3>Omar Courz</h3>
+              <p>Las canciones mas personales.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="cantantes4.jpeg" alt="Foto del cantante 4">
+            <figcaption>
+              <span class="numero">4 / 5</span>
+              <h3>Chance Pe;a</h3>
+              <p>Dime un tema malo de el y elimino mi cuenta.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="cantantes5.jpeg" alt="Foto del cantante 5">
+            <figcaption>
+              <span class="numero">5 / 5</span>
+              <h3>Fuerza Regida</h3>
+              <p>Himnos no se como le hace para pegar todo lo que toca.</p>
+            </figcaption>
+          </figure>
+
+        </div>
+                <input class="control" type="radio" name="foto-cantantes" id="cantantes-1" aria-label="Ver foto 1">
+        <input class="control" type="radio" name="foto-cantantes" id="cantantes-2" aria-label="Ver foto 2">
+        <input class="control" type="radio" name="foto-cantantes" id="cantantes-3" aria-label="Ver foto 3">
+        <input class="control" type="radio" name="foto-cantantes" id="cantantes-4" aria-label="Ver foto 4">
+        <input class="control" type="radio" name="foto-cantantes" id="cantantes-5" aria-label="Ver foto 5">
+      </div>
+    </section>
+
+
+    <!-- ===================== SECCIÓN 5: DEPORTES ===================== -->
+    <section class="panel" id="panel-deportes">
+      <header class="panel-cabecera">
+        <span class="etiqueta">05 · Deportes</span>
+        <h1>Deportes</h1>
+        <p>Las vainas que practico y no se como es que los juego.</p>
+      </header>
+
+      <div class="carrusel">
+                <div class="puntos">
+          <label for="deportes-1"></label>
+          <label for="deportes-2"></label>
+          <label for="deportes-3"></label>
+          <label for="deportes-4"></label>
+          <label for="deportes-5"></label>
+        </div>
+        <span class="pausa">❚❚ Pausado</span>
+        <div class="pista">
+
+          <figure class="slide">
+            <img src="deportes1.jpeg" alt="Foto del deporte 1">
+            <figcaption>
+              <span class="numero">1 / 5</span>
+              <h3>Futbol</h3>
+              <p>El mas grande lo juega.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="deportes2.jpeg" alt="Foto del deporte 2">
+            <figcaption>
+              <span class="numero">2 / 5</span>
+              <h3>Voly</h3>
+              <p>Los mejores culos.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="deportes3.jpeg" alt="Foto del deporte 3">
+            <figcaption>
+              <span class="numero">3 / 5</span>
+              <h3>Ping Pong</h3>
+              <p>Puro chino lo juega, como pueden ser tan buenos.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="deportes4.jpeg" alt="Foto del deporte 4">
+            <figcaption>
+              <span class="numero">4 / 5</span>
+              <h3>Natacion</h3>
+              <p>Me falta el aire, y el corazon tucun tucun tucun.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="deportes5.jpeg" alt="Foto del deporte 5">
+            <figcaption>
+              <span class="numero">5 / 5</span>
+              <h3>Atletismo</h3>
+              <p>Ni me acordaba que existia.</p>
+            </figcaption>
+          </figure>
+
+        </div>
+                <input class="control" type="radio" name="foto-deportes" id="deportes-1" aria-label="Ver foto 1">
+        <input class="control" type="radio" name="foto-deportes" id="deportes-2" aria-label="Ver foto 2">
+        <input class="control" type="radio" name="foto-deportes" id="deportes-3" aria-label="Ver foto 3">
+        <input class="control" type="radio" name="foto-deportes" id="deportes-4" aria-label="Ver foto 4">
+        <input class="control" type="radio" name="foto-deportes" id="deportes-5" aria-label="Ver foto 5">
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="pie" id="contacto">
+    <div class="pie-contenido">
+      <div class="pie-bloque">
+        <p class="pie-marca"><span class="logo">G</span> Galería de Imágenes</p>
+        <p>Una galería personal sobre mi carrera, mis sueños, las películas, los cantantes y los deportes que me gustan.</p>
+      </div>
+
+      <div class="pie-bloque">
+        <h4>Contacto</h4>
+        <a href="mailto:tucorreo@ejemplo.com">andresapazalberto@gmail.com</a>
+      
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
